@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+-(NSMutableArray *)fetchDataFromDB;
+-(void)setDataInDB:(NSDictionary *)aDictResponse;
+-(void)serviceCallingToFetchData;
+
 
 @end
 

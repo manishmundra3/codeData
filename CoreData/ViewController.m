@@ -79,7 +79,6 @@
             
             NSError *error = nil;
             NSDictionary *aDictResponse = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            
             [self setDataInDB:aDictResponse];
             [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"ServiceCalled"];
             [[NSUserDefaults standardUserDefaults] synchronize];
